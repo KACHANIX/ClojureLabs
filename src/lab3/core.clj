@@ -6,26 +6,8 @@
 (require '[clojure.data.csv :as csv]
          '[clojure.java.io :as io])
 
-
-(defn approximate
-  [data-flow
-   step]
-  (loop [flow-iterator data-flow
-         prev-point nil]
-    (if (nil? prev-point)
-      ()
-      (do
-        (let [x1 (Float/parseFloat (first prev-point))
-              y1 (Float/parseFloat (second prev-point))
-              x2 (Float/parseFloat (first (first flow-iterator)))
-              y2 (Float/parseFloat (second (first flow-iterator)))]
-          (println "chlen")
-          (apply println (map #(str "\t" (format "%.1f" %1) ";" (format "%.1f" %2) "\n") (map #(+ (/ (- (* x1 y1) (* x2 y1)) (- x1 x2)) (* % (/ (- y1 y2) (- x1 x2)))) (range x1 x2 step)) (range x1 x2 step)))
-          )
-        ))
-    (recur (next flow-iterator) (first flow-iterator)))
-  )
-
+(defn to-float [x] (Float/parseFloat x))
+(defn out [x] (apply println x))
 (def data-flow (csv/read-csv (BufferedReader. *in*) :separator \;))
 (defn -main
   "docstring"
@@ -38,11 +20,9 @@
         (if (nil? prev-point)
           ()
           (do
-            (let [x1 (Float/parseFloat (first prev-point))
-                  y1 (Float/parseFloat (second prev-point))
-                  x2 (Float/parseFloat (first (first flow-iterator)))
-                  y2 (Float/parseFloat (second (first flow-iterator)))]
-              (apply println (map #(str "\t" (format "%.3f" %1) ";" (format "%.3f" %2) "\n")  (range x1 x2 (Float/parseFloat step)) (map #(+ (/ (- (* x2 y1) (* x1 y2)) (- x2 x1)) (* % (/ (- y2 y1) (- x2 x1)))) (range x1 x2 (Float/parseFloat step)))))
+            (let [x1 (to-float (first prev-point)) y1 (to-float (second prev-point))
+                  x2 (to-float (first (first flow-iterator))) y2 (to-float (second (first flow-iterator)))]
+              (out (map #(str "\t" (format "%.3f" %1) ";" (format "%.3f" %2) "\n")  (range x1 x2 (to-float step)) (map #(+ (/ (- (* x2 y1) (* x1 y2)) (- x2 x1)) (* % (/ (- y2 y1) (- x2 x1)))) (range x1 x2 (to-float step)))))
               )
             ))
         (recur (next flow-iterator) (first flow-iterator)))
