@@ -15,3 +15,5 @@
   (/ (* a b) (gcd a b))
   )
 (println (reduce #(lcm %1 %2) (range 1 21)))
+(println "asd")
+(lcm 2 4)
