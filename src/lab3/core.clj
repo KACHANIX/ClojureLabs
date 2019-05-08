@@ -47,8 +47,6 @@
   [step quantity]
   (loop [curr-point (- quantity 1)
          prev-point 0]
-
-
     (apply println (map #(str "\t" (format "%.3f" %1) ";" (format "%.3f" %2) "\n") (range (to-float (first (nth data-flow prev-point))) (to-float (first (nth data-flow curr-point))) step)
                         (lagrange (to-float (first (nth data-flow prev-point)))
                                   (to-float (first (nth data-flow curr-point)))
