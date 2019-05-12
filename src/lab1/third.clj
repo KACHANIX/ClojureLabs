@@ -17,4 +17,8 @@
   (println a "   " b)
   (/ (* a b) (gcd a b))
   )
-(println (reduce #(lcm %1 %2) (map inc (take 20 (range)))))
+
+(defn third [quantity]
+  (println (reduce #(lcm %1 %2) (map inc (take quantity (range)))))
+  )
+(third 20)

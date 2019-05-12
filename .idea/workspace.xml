@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6fccd8d5-5156-482f-bb87-1d2c975c1882" name="Default Changelist" comment="" />
+    <list default="true" id="6fccd8d5-5156-482f-bb87-1d2c975c1882" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab1/first.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab1/first.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab1/second.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab1/second.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab1/third.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab1/third.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/lab1/lab1/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/maven/lab1/lab1/pom.properties" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,10 +18,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/lab3/tests.clj">
+        <entry file="file://$PROJECT_DIR$/src/lab1/second.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lab1/third.clj">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+              <caret line="21" column="65" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -34,6 +49,15 @@
       <find>flow-iterator</find>
       <find>prev-point</find>
       <find>min-points</find>
+      <find>basic-pol-coll</find>
+      <find>basic-poly</find>
+      <find>x-to-eliminate</find>
+      <find>x-values-nodes</find>
+      <find>y-values-nodes</find>
+      <find>x-start</find>
+      <find>x-end</find>
+      <find>data-flow</find>
+      <find>filter</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -42,23 +66,27 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/lab1/first.clj" />
         <option value="$PROJECT_DIR$/project.clj" />
         <option value="$PROJECT_DIR$/src/lab3/tests.clj" />
+        <option value="$PROJECT_DIR$/src/lab1/third.clj" />
+        <option value="$PROJECT_DIR$/src/lab1/first.clj" />
         <option value="$PROJECT_DIR$/src/lab3/core.clj" />
+        <option value="$PROJECT_DIR$/src/lab1/second.clj" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="812" />
-    <option name="width" value="1115" />
-    <option name="height" value="1087" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="275" />
+    <option name="y" value="-18" />
+    <option name="width" value="1089" />
+    <option name="height" value="1031" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -88,13 +116,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557424527490" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557681999806" />
     <property name="cursive.last.file.extension.C\:/Users/SKOCH/Desktop/ClojureLabs/src" value="clj" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -111,7 +138,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Clojure Application.tests">
+  <component name="RunManager" selected="Clojure Application.second">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="replType" value="NREPL" />
       <setting name="execution" value="LEININGEN" />
@@ -138,8 +165,20 @@
       <setting name="profiles" value="" />
       <setting name="aliases" value="" />
       <setting name="vmparams" value="" />
-      <setting name="params" value="approximate 0.1 4" />
+      <setting name="params" value="lagrange 0.1 4" />
       <setting name="workDir" value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="second" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
+      <module name="lab1" />
+      <setting name="path" value="$PROJECT_DIR$/src/lab1/second.clj" />
+      <setting name="namespace" value="" />
+      <setting name="execution" value="INTELLIJ" />
+      <setting name="profiles" value="" />
+      <setting name="aliases" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="$PROJECT_DIR$/src/lab1" />
       <method v="2" />
     </configuration>
     <configuration name="tests" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
@@ -154,14 +193,30 @@
       <setting name="workDir" value="$PROJECT_DIR$/src/lab3" />
       <method v="2" />
     </configuration>
+    <configuration name="third" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
+      <module name="lab1" />
+      <setting name="path" value="$PROJECT_DIR$/src/lab1/third.clj" />
+      <setting name="namespace" value="" />
+      <setting name="execution" value="INTELLIJ" />
+      <setting name="profiles" value="" />
+      <setting name="aliases" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="$PROJECT_DIR$/src/lab1" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Clojure Application.core" />
       <item itemvalue="Clojure Application.tests" />
+      <item itemvalue="Clojure Application.third" />
+      <item itemvalue="Clojure Application.second" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Clojure Application.tests" />
+        <item itemvalue="Clojure Application.second" />
+        <item itemvalue="Clojure Application.third" />
         <item itemvalue="Clojure Application.core" />
+        <item itemvalue="Clojure Application.tests" />
       </list>
     </recent_temporary>
   </component>
@@ -184,6 +239,9 @@
       <workItem from="1557333324079" duration="4986000" />
       <workItem from="1557347860926" duration="3462000" />
       <workItem from="1557415393848" duration="6896000" />
+      <workItem from="1557439170553" duration="1259000" />
+      <workItem from="1557659738423" duration="2194000" />
+      <workItem from="1557667081017" duration="5294000" />
     </task>
     <task id="LOCAL-00001" summary="linear approx ready, changing it to use closure">
       <created>1556993846927</created>
@@ -213,17 +271,33 @@
       <option name="project" value="LOCAL" />
       <updated>1557425043583</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="code beautified">
+      <created>1557439715948</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1557439715948</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22508000" />
+    <option name="totallyTimeSpent" value="31255000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="812" y="0" width="1115" height="1087" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16208531" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.075159915" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -232,16 +306,16 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4025157" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36967808" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997923" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32606438" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32962137" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32516703" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32962137" />
       <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -264,16 +338,10 @@
     <MESSAGE value="savepoint" />
     <MESSAGE value="lab3 is almost ready, must fix the code and add tests to 'approximate' and 'lagrange'" />
     <MESSAGE value="tests made" />
-    <option name="LAST_COMMIT_MESSAGE" value="tests made" />
+    <MESSAGE value="code beautified" />
+    <option name="LAST_COMMIT_MESSAGE" value="code beautified" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/lab1/first.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -281,17 +349,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lab3/core.clj">
+    <entry file="file://$PROJECT_DIR$/src/lab3/tests.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="67" lean-forward="true" selection-start-line="6" selection-start-column="67" selection-end-line="6" selection-end-column="67" />
+        <state relative-caret-position="391">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lab3/tests.clj">
+    <entry file="file://$PROJECT_DIR$/src/lab1/first.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" selection-start-line="18" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab3/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab1/third.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <caret line="21" column="65" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab1/second.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
         </state>
       </provider>
     </entry>
