@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6fccd8d5-5156-482f-bb87-1d2c975c1882" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/playground/pg.clj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab1/first.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab1/first.clj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab1/second.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab1/second.clj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab1/third.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab1/third.clj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/lab1/lab1/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/maven/lab1/lab1/pom.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,11 +14,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lab1/second.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+            <state relative-caret-position="255">
+              <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/playground/pg.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="33" lean-forward="true" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -72,6 +78,7 @@
         <option value="$PROJECT_DIR$/src/lab1/first.clj" />
         <option value="$PROJECT_DIR$/src/lab3/core.clj" />
         <option value="$PROJECT_DIR$/src/lab1/second.clj" />
+        <option value="$PROJECT_DIR$/src/playground/pg.clj" />
       </list>
     </option>
   </component>
@@ -121,7 +128,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557681999806" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558190599075" />
     <property name="cursive.last.file.extension.C\:/Users/SKOCH/Desktop/ClojureLabs/src" value="clj" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -138,7 +145,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Clojure Application.second">
+  <component name="RunManager" selected="Clojure Application.pg">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="replType" value="NREPL" />
       <setting name="execution" value="LEININGEN" />
@@ -167,6 +174,18 @@
       <setting name="vmparams" value="" />
       <setting name="params" value="lagrange 0.1 4" />
       <setting name="workDir" value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pg" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
+      <module name="lab1" />
+      <setting name="path" value="$PROJECT_DIR$/src/playground/pg.clj" />
+      <setting name="namespace" value="" />
+      <setting name="execution" value="INTELLIJ" />
+      <setting name="profiles" value="" />
+      <setting name="aliases" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="$PROJECT_DIR$/src/playground" />
       <method v="2" />
     </configuration>
     <configuration name="second" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
@@ -210,9 +229,11 @@
       <item itemvalue="Clojure Application.tests" />
       <item itemvalue="Clojure Application.third" />
       <item itemvalue="Clojure Application.second" />
+      <item itemvalue="Clojure Application.pg" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Clojure Application.pg" />
         <item itemvalue="Clojure Application.second" />
         <item itemvalue="Clojure Application.third" />
         <item itemvalue="Clojure Application.core" />
@@ -242,6 +263,7 @@
       <workItem from="1557439170553" duration="1259000" />
       <workItem from="1557659738423" duration="2194000" />
       <workItem from="1557667081017" duration="5294000" />
+      <workItem from="1558189351923" duration="676000" />
     </task>
     <task id="LOCAL-00001" summary="linear approx ready, changing it to use closure">
       <created>1556993846927</created>
@@ -282,7 +304,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31255000" />
+    <option name="totallyTimeSpent" value="31931000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -297,7 +319,7 @@
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.075159915" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.07569297" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -370,6 +392,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab1/second.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/lab1/third.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -377,10 +406,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lab1/second.clj">
+    <entry file="file://$PROJECT_DIR$/src/playground/pg.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        <state relative-caret-position="34">
+          <caret line="2" column="33" lean-forward="true" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
         </state>
       </provider>
     </entry>
