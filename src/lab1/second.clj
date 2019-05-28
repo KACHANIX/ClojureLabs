@@ -7,11 +7,20 @@
     )
   )
 
+;(defmacro check [n x] (println "zal") `(and ~@(map (fn [e] `(= 0 (mod ~x ~e))) (map inc (take n (range))))))
+(defn check [n x] `(and ~@(map (fn [e] `(= 0 (mod ~x ~e))) (map inc (take n (range))))))
+
 "Решение 2 - ксеноморфное с рекурсией"
 (defn get_lcm [quantity]
-    (loop [N 0]
-      (if (and (macroexpand `(is-divided ~N ~quantity))
-               (not (= 0 N)))
-        N
-        (recur (+ N 20)))))
-(get_lcm 20)
+  (loop [N quantity]
+    (if `(check quantity N)
+      (println (check quantity N))
+      (do
+        (println N)
+        (recur (+ N quantity))
+        )
+      )
+    )
+  )
+
+(get_lcm 10)
