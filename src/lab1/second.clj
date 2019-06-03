@@ -13,13 +13,13 @@
 "Решение 2 - ксеноморфное с рекурсией"
 (defn get_lcm [quantity]
   (loop [N quantity]
-    (if `(check quantity N)
-      (println (check quantity N))
-      (do
-        (println N)
-        (recur (+ N quantity))
+      (if (macroexpand '(check quantity N))
+        (println (check quantity N))
+        (do
+          (println N)
+          (recur (+ N quantity))
+          )
         )
-      )
     )
   )
 
