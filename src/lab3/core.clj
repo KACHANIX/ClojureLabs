@@ -42,7 +42,9 @@
   [step quantity]
   (loop [curr-point (- quantity 1)
          prev-point 0]
-    (apply println (map #(str "\t" (format "%.3f" %1) ";" (format "%.3f" %2) "\n") (range (to-float (first (nth input prev-point))) (to-float (first (nth input curr-point))) step)
+    (apply println (map #(str "\t" (format "%.3f" %1) ";" (format "%.3f" %2) "\n")
+                        (range (to-float (first (nth input prev-point)))
+                               (to-float (first (nth input curr-point))) step)
                         (lagrange (to-float (first (nth input prev-point)))
                                   (to-float (first (nth input curr-point)))
                                   (map #(to-float (first %)) (take quantity (drop prev-point input)))

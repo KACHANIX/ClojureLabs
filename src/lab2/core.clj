@@ -1,64 +1,4 @@
-(ns playground.pg)
-(require '[clojure.core.reducers :as r])
-;
-;
-;(defprotocol Hasher
-;  (hash-and-add [this new-element-key new-element-value])
-;  (print-it [this])
-;  (map-it [this f] [this f x])
-;  (left-fold-it [this f] [this f x])
-;  (right-fold-it [this f] [this f x])
-;
-;  (delete-it [])
-;  )
-;
-;(deftype my-hash-map [^{:volatile-mutable true} elements]
-;  Hasher
-;  (hash-and-add [this new-element-key new-element-value]
-;    (set! elements
-;          (assoc elements (mod (hash new-element-key) (count elements)) new-element-value)))
-;  (print-it [this] (println (str elements)))
-;
-;  (map-it [this f ]
-;    (set! elements (vec (map #(if (= nil %) nil (f %)) elements))))
-;  (map-it [this f x]
-;    (set! elements (vec (map #(if (= nil %) nil (f % x)) elements))))
-;
-;  (left-fold-it [this f]
-;    (reduce f (remove nil? elements)))
-;  (left-fold-it [this f x]
-;    (reduce f x (remove nil? elements)))
-;
-;  (right-fold-it [this f]
-;    (reduce f (reverse (remove nil? elements))))
-;  (right-fold-it [this f x]
-;    (reduce f x (reverse (remove nil? elements))))
-;  )
-;
-;
-;
-;(def am (my-hash-map. (vec (replicate 10 nil))))
-;
-;(hash-and-add am "govno" 5)
-;(hash-and-add am "ad" 6)
-;(print-it am)
-;
-;(map-it am * 5)
-;(print-it am)
-;(println (left-fold-it am *))
-;(println (left-fold-it am * 3))
-
-;
-
-
-
-
-
-
-
-
-
-
+(ns lab2.core)
 
 
 
@@ -68,7 +8,6 @@
     1
     (if (> (reduce + (map int (str (:value map-1)))) (reduce + (map int (str (:value map-2))))) 1 2)))
 
-;(def count elements) 5)
 (def not-nil? (complement nil?))
 
 (defn hash-sum [input]
@@ -77,7 +16,6 @@
       (if (not (= N (count key)))
         (recur (inc N) (+ sum (* (inc N) (nth key N))))
         sum))))
-
 
 
 (defprotocol hash-map-protocol
@@ -89,12 +27,10 @@
   (fold-right [this f] [this f initial-value])
   (merge-hash-tables [map1 map2])
   (get-elements [this])
-  (filter-hash-table [this pred])
-  )
+  (filter-hash-table [this pred]))
 
 (deftype hash-map-type [^:volatile-mutable elements]
   hash-map-protocol
-
   (put [this new-element]
     (if (= (count elements) (count (filter not-nil? elements)))
       "Hash-map is full!"
@@ -157,13 +93,13 @@
 
   (filter-hash-table [this pred]
     (set! elements (vec (map #(if (nil? %)
-            nil
-            (if (even? (:value %)) % nil)) elements))))
+                                nil
+                                (if (pred (:value %)) % nil)) elements))))
 
   (merge-hash-tables [this hash-table-2]
     (if (= (get-elements this) (get-elements hash-table-2))
       ()
-      (if (nil? hash-table-2)
+      (if (nil? (get-elements hash-table-2))
         ()
         (if (nil? elements)
           (set! elements (get-elements hash-table-2))
@@ -188,53 +124,10 @@
                                {:key (:key (nth elements-of-hash-table-1 iter)) :value (get-by-key hash-table-2 (:key (nth elements-of-hash-table-1 iter)))}))
                         (recur (inc iter) (filter #(not (= (:key (nth elements-of-hash-table-1 iter)) (:key %))) filtered-elements-hash-table-2))))))))))))))
 
-;(def a (hash-map-type. (vec (repeat 5 nil))))
-;(def b (hash-map-type. (vec (repeat 5 nil))))
 ;
-;(put a {:key "B" :value 1})
-;(put a {:key "BSD" :value 323})
-;(put b {:key "B" :value 2})
-;(put b {:key "BSD" :value 323})
-;(merge-hash-tables a b)
-;(println (get-elements a))
+;(def a (hash-map-type. (vec (repeat 5 nil))))
+;(put a {:key "asd" :value 124})
 ;(filter-hash-table a even?)
 ;(println (get-elements a))
-
-;Associative property of merge operation
-;(a + b) + c = a + (b + c)
-
-
-
-
-
-
-
-
-
-
-;
-(def a (hash-map-type. (vec (repeat 5 nil))))
-(put a {:key "asd" :value 123})
-(remove-by-key a "asd")
-(println(get-by-key a "asd"))
-;(put a {:key "B" :value 0})
-;(def b (hash-map-type. (vec (repeat 5 nil))))
-;(put b {:key "B" :value 1})
-;(put b {:key "BSD" :value 323})
-;(println (get-elements a))
-;(println (get-elements b))
-;(merge-hash-tables a b)
-;(println (get-elements a))
-;
-;
-;
-;(def c (hash-map-type. (vec (repeat 5 nil))))
-;(put c {:key "asd" :value 123})
-;(put c {:key "B" :value 0})
-;(def d (hash-map-type. (vec (repeat 5 nil))))
-;(put d {:key "B" :value 1})
-;(put d {:key "BSD" :value 323})
-;(merge-hash-tables d (hash-map-type. (vec (repeat 1 nil))))
-;(println "\n\n\n")
-;(println (get-elements d))
-
+;(remove-by-key a "asd")
+;(println(get-by-key a "asd"))
