@@ -6,7 +6,9 @@
 (defn resolver [map-1 map-2]
   (if (= (:value map-1) (:value map-2))
     1
-    (if (> (reduce + (map int (str (:value map-1)))) (reduce + (map int (str (:value map-2))))) 1 2)))
+    (if (>
+          (reduce + (map int (str (:value map-1))))
+          (reduce + (map int (str (:value map-2))))) 1 2)))
 
 (def not-nil? (complement nil?))
 
@@ -86,7 +88,8 @@
     (reduce f (map #(:value %) (reverse (filter not-nil? elements)))))
 
   (fold-right [this f initial-value]
-    (reduce f initial-value (map #(:value %) (reverse (filter not-nil? elements)))))
+    (reduce f initial-value
+            (map #(:value %) (reverse (filter not-nil? elements)))))
 
   (get-elements [this]
     elements)
@@ -104,25 +107,37 @@
         (if (nil? elements)
           (set! elements (get-elements hash-table-2))
           (let [elements-of-hash-table-1 elements]
-            (set! elements (vec (repeat (+ (count elements) (count (get-elements hash-table-2))) nil)))
+            (set! elements
+                  (vec (repeat (+ (count elements)
+                                  (count (get-elements hash-table-2))) nil)))
             (loop [iter 0
                    filtered-elements-hash-table-2 (get-elements hash-table-2)]
               (if (= iter (count elements-of-hash-table-1))
-                (doall (map #(put this %) (vec (filter not-nil? filtered-elements-hash-table-2))))
+                (doall
+                  (map #(put this %)
+                       (vec (filter not-nil? filtered-elements-hash-table-2))))
                 (if (nil? (nth elements-of-hash-table-1 iter))
                   (recur (inc iter) filtered-elements-hash-table-2)
                   (do
-                    (if (nil? (get-by-key hash-table-2 (:key (nth elements-of-hash-table-1 iter))))
+                    (if (nil? (get-by-key hash-table-2
+                                          (:key (nth elements-of-hash-table-1 iter))))
                       (do
                         (put this (nth elements-of-hash-table-1 iter))
                         (recur (inc iter) filtered-elements-hash-table-2))
                       (do
                         (if (= 1 (resolver (nth elements-of-hash-table-1 iter)
-                                           {:key (:key (nth elements-of-hash-table-1 iter)) :value (get-by-key hash-table-2 (:key (nth elements-of-hash-table-1 iter)))}))
+                                           {:key (:key (nth elements-of-hash-table-1 iter))
+                                            :value (get-by-key hash-table-2
+                                                               (:key (nth elements-of-hash-table-1 iter)))}))
                           (put this (nth elements-of-hash-table-1 iter))
                           (put this
-                               {:key (:key (nth elements-of-hash-table-1 iter)) :value (get-by-key hash-table-2 (:key (nth elements-of-hash-table-1 iter)))}))
-                        (recur (inc iter) (filter #(not (= (:key (nth elements-of-hash-table-1 iter)) (:key %))) filtered-elements-hash-table-2))))))))))))))
+                               {:key (:key (nth elements-of-hash-table-1 iter))
+                                :value (get-by-key hash-table-2
+                                                   (:key (nth elements-of-hash-table-1 iter)))}))
+                        (recur (inc iter)
+                               (filter #(not (=
+                                               (:key (nth elements-of-hash-table-1 iter))
+                                               (:key %))) filtered-elements-hash-table-2))))))))))))))
 
 ;
 ;(def a (hash-map-type. (vec (repeat 5 nil))))
