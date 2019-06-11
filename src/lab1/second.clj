@@ -7,8 +7,8 @@
     )
   )
 
-;(defmacro check [n x] (println "zal") `(and ~@(map (fn [e] `(= 0 (mod ~x ~e))) (map inc (take n (range))))))
-(defn check [n x] `(and ~@(map (fn [e] `(= 0 (mod ~x ~e))) (map inc (take n (range))))))
+(defmacro check [n x]  `(and ~@(map (fn [e] `(= 0 (mod ~x ~e))) (map inc (take n (range))))))
+;(defn check [n x] `(and ~@(map (fn [e] `(= 0 (mod ~x ~e))) (map inc (take n (range))))))
 
 "Решение 2 - ксеноморфное с рекурсией"
 (defn get_lcm [quantity]

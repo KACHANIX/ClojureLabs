@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/lab4/core.clj" line="2" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="6fccd8d5-5156-482f-bb87-1d2c975c1882" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/lab4/core.clj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nrepl-port" beforeDir="false" afterPath="$PROJECT_DIR$/.nrepl-port" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab1/second.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab1/second.clj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lab2/core.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab2/core.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/playground/pg.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/playground/pg.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/lab1/lab1/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/maven/lab1/lab1/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/repl-port" beforeDir="false" afterPath="$PROJECT_DIR$/target/repl-port" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,20 +23,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lab2/tests.clj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="747">
-              <caret line="116" selection-start-line="116" selection-end-line="116" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/lab2/core.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="768">
-              <caret line="139" column="88" lean-forward="true" selection-start-line="139" selection-start-column="88" selection-end-line="139" selection-end-column="88" />
+            <state relative-caret-position="563">
+              <caret line="140" column="47" selection-start-line="140" selection-start-column="47" selection-end-line="140" selection-end-column="47" />
+              <folding>
+                <element signature="e#19#216#0" />
+                <element signature="e#252#437#0" />
+                <element signature="e#440#1007#0" />
+                <element signature="e#1010#1487#0" />
+                <element signature="e#1490#2052#0" />
+                <element signature="e#2055#2240#0" />
+                <element signature="e#2243#2500#0" />
+                <element signature="e#2503#2752#0" />
+                <element signature="e#2755#2892#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -64,6 +75,9 @@
       <find>merge</find>
       <find>initial-capacity</find>
       <find>println</find>
+      <find>filtered</find>
+      <find>get</find>
+      <find>get-elements</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -81,18 +95,19 @@
         <option value="$PROJECT_DIR$/src/lab3/tests.clj" />
         <option value="$PROJECT_DIR$/src/lab1/third.clj" />
         <option value="$PROJECT_DIR$/src/lab1/first.clj" />
-        <option value="$PROJECT_DIR$/src/lab1/second.clj" />
         <option value="$PROJECT_DIR$/src/lab3/core.clj" />
         <option value="$PROJECT_DIR$/src/lab2/lab2.clj" />
-        <option value="$PROJECT_DIR$/src/playground/pg.clj" />
         <option value="$PROJECT_DIR$/src/lab2/tests.clj" />
+        <option value="$PROJECT_DIR$/src/lab1/second.clj" />
+        <option value="$PROJECT_DIR$/src/playground/pg.clj" />
+        <option value="$PROJECT_DIR$/src/lab4/core.clj" />
         <option value="$PROJECT_DIR$/src/lab2/core.clj" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="822" />
-    <option name="width" value="1105" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="953" />
+    <option name="width" value="974" />
     <option name="height" value="1087" />
   </component>
   <component name="ProjectView">
@@ -100,8 +115,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -132,21 +145,41 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="lab3" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="lab1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ClojureLabs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="lab4" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lab1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ClojureLabs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="playground" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559834603049" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560289505501" />
     <property name="cursive.last.file.extension.C\:/Users/SKOCH/Desktop/ClojureLabs/src" value="clj" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../свалка/ОПИ/lab4" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.smartKeys" />
   </component>
-  <component name="ReplState" timestamp="1559598591907">{:repl-history {:ide [], :local [{:command &quot;(lcm 2 4\n     )&quot;, :offset 15, :ns &quot;lab1.core&quot;} {:command &quot;(+ 1 2)&quot;, :offset 7, :ns &quot;lab1.core&quot;} {:command &quot;(ns lab1.first)&quot;, :offset 15, :ns &quot;lab1.core&quot;} {:command &quot;(lcm 2 3)&quot;, :offset 9, :ns &quot;lab1.first&quot;} {:command &quot;(defmacro check [n] `(let [x# ~n] (and ~@(map (fn [e] `(= 0 (mod x# ~e))) (map inc (take n (range)))))))&quot;, :offset 104, :ns &quot;lab1.core&quot;} {:command &quot;(defmacro check [n] `(let [x# ~n] (and ~@(map (fn [e] `(= 0 (mod x ~e))) (map inc (take n (range)))))))&quot;, :offset 66, :ns &quot;lab1.core&quot;} {:command &quot;(defn check [n] `(let [x# ~n] (and ~@(map (fn [e] `(= 0 (mod x ~e))) (map inc (take n (range)))))))&quot;, :offset 5, :ns &quot;lab1.core&quot;} {:command &quot;(check 4\n       )&quot;, :offset 16, :ns &quot;lab1.core&quot;} {:command &quot;(defn check [n] `(let [x# ~n] (and ~@(map (fn [e] `(= 0 (mod @x ~e))) (map inc (take n (range)))))))&quot;, :offset 62, :ns &quot;lab1.core&quot;} {:command &quot;(check 4\n       \n       )&quot;, :offset 24, :ns &quot;lab1.core&quot;} {:command &quot;(defn check [n] `(let [x# ~n] (and ~@(map (fn [e] `(= 0 (mod ~x ~e))) (map inc (take n (range)))))))&quot;, :offset 62, :ns &quot;lab1.core&quot;} {:command &quot;(defn check [n] \n  `(let [x# ~n] \n     (and ~@(map \n              (fn [e] `(= 0 (mod ~x ~e))) \n                 (map inc (take n (range)))))))&quot;, :offset 32, :ns &quot;lab1.core&quot;} {:command &quot;(defn check [n] \n  `(let [x ~n] \n     (and ~@(map \n              (fn [e] `(= 0 (mod ~~x ~e))) \n                 (map inc (take n (range)))))))&quot;, :offset 86, :ns &quot;lab1.core&quot;} {:command &quot;(defn check [n] \n  `(let [x ~n] \n     (and ~@(map \n              (fn [e] `(= 0 (mod ~x ~e))) \n                 (map inc (take n (range)))))))&quot;, :offset 85, :ns &quot;lab1.core&quot;} {:command &quot;(defn check [n] \n  `(let [x ~n] \n     (and ~@(map \n              (fn [e] `(= 0 (mod x ~e))) \n                 (map inc (take n (range)))))))&quot;, :offset 84, :ns &quot;lab1.core&quot;} {:command &quot;(defn check [n] `(let [x ~n] (and ~@(map (fn [e] `(= 0 (mod x ~e))) (map inc (take n (range)))))))&quot;, :offset 16, :ns &quot;lab1.core&quot;} {:command &quot;(defn check [n] `((and ~@(map (fn [e] `(= 0 (mod n ~e))) (map inc (take n (range)))))))&quot;, :offset 51, :ns &quot;lab1.core&quot;} {:command &quot;(defn check [n] `((and ~@(map (fn [e] `(= 0 (mod ~n ~e))) (map inc (take n (range)))))))&quot;, :offset 50, :ns &quot;lab1.core&quot;} {:command &quot;(defmacro check [n] `((and ~@(map (fn [e] `(= 0 (mod ~n ~e))) (map inc (take n (range)))))))&quot;, :offset 9, :ns &quot;lab1.core&quot;} {:command &quot;(defmacro check [n] `(and ~@(map (fn [e] `(= 0 (mod ~n ~e))) (map inc (take n (range))))))&quot;, :offset 88, :ns &quot;lab1.core&quot;} {:command &quot;(check 4)&quot;, :offset 8, :ns &quot;lab1.core&quot;} {:command &quot;(check 20)&quot;, :offset 9, :ns &quot;lab1.core&quot;} {:command &quot;(defn check [n] `(and ~@(map (fn [e] `(= 0 (mod ~n ~e))) (map inc (take n (range))))))&quot;, :offset 5, :ns &quot;lab1.core&quot;} {:command &quot;(defn check [n x] `(and ~@(map (fn [e] `(= 0 (mod ~x ~e))) (map inc (take n (range))))))&quot;, :offset 53, :ns &quot;lab1.core&quot;} {:command &quot;(check 24)&quot;, :offset 9, :ns &quot;lab1.core&quot;} {:command &quot;(defmacro check [n x] `(and ~@(map (fn [e] `(= 0 (mod ~x ~e))) (map inc (take n (range))))))&quot;, :offset 10, :ns &quot;lab1.core&quot;} {:command &quot;(if (check 4 28) 1 2)&quot;, :offset 15, :ns &quot;lab1.core&quot;} {:command &quot;(if (check 4 48) 1 2)&quot;, :offset 14, :ns &quot;lab1.core&quot;} {:command &quot;(defn get_lcm [quantity]\n  (loop [N 0]\n    (if (check quantity N)\n      N\n      (recur (+ N 20)))))&quot;, :offset 99, :ns &quot;lab1.core&quot;} {:command &quot;(defmacro check [n x] (println \&quot;zal\&quot;) `(and ~@(map (fn [e] `(= 0 (mod ~x ~e))) (map inc (take n (range))))))&quot;, :offset 108, :ns &quot;lab1.core&quot;} {:command &quot;(if (check 4 25) 1 2)&quot;, :offset 15, :ns &quot;lab1.core&quot;} {:command &quot;(defn check [n x] (println \&quot;zal\&quot;) `(and ~@(map (fn [e] `(= 0 (mod ~x ~e))) (map inc (take n (range))))))&quot;, :offset 5, :ns &quot;lab1.core&quot;} {:command &quot;(if (check 4 24) 1 2)&quot;, :offset 20, :ns &quot;lab1.core&quot;} {:command &quot;(defn check [n x] (println \&quot;zal\&quot;) `(and ~@(map (fn [e] `(= 0 (mod ~x ~e))) (map inc (take n (range)))) (not (= x 0))))&quot;, :offset 15, :ns &quot;lab1.core&quot;} {:command &quot;(println \&quot;asdasd\&quot;)&quot;, :offset 16, :ns &quot;lab1.core&quot;} {:command &quot;(check 4 24)&quot;, :offset 11, :ns &quot;lab1.core&quot;} {:command &quot;(defmacro check [n x] (println \&quot;zal\&quot;) `(and ~@(map (fn [e] `(= 0 (mod ~x ~e))) (map inc (take n (range)))) (not (= x 0))))&quot;, :offset 9, :ns &quot;lab1.core&quot;} {:command &quot;(defmacro check [n x] `(and ~@(map (fn [e] `(= 0 (mod ~x ~e))) (map inc (take n (range)))) (not (= x 0))))\n&quot;, :offset 107, :ns &quot;lab1.core&quot;} {:command &quot;(defn check [n x] `(and ~@(map (fn [e] `(= 0 (mod ~x ~e))) (map inc (take n (range)))) (not (= x 0))))\n&quot;, :offset 5, :ns &quot;lab1.core&quot;} {:command &quot;(defn check [n x] `(and ~@(map (fn [e] `(= 0 (mod ~x ~e))) (map inc (take n (range)))) (not (= ~x 0))))\n&quot;, :offset 96, :ns &quot;lab1.core&quot;} {:command &quot;(defmacro check [n x] `(and ~@(map (fn [e] `(= 0 (mod ~x ~e))) (map inc (take n (range)))) (not (= ~x 0))))\n&quot;, :offset 9, :ns &quot;lab1.core&quot;} {:command &quot;(macroexpand `(check 20 0))&quot;, :offset 25, :ns &quot;lab1.core&quot;} {:command &quot;(defmacro check [n x] `(and `(not (= x 0)) ~@(map (fn [e] `(= 0 (mod ~x ~e))) (map inc (take n (range))))))\n&quot;, :offset 108, :ns &quot;lab1.core&quot;} {:command &quot;(defn check [n x] `(and `(not (= x 0)) ~@(map (fn [e] `(= 0 (mod ~x ~e))) (map inc (take n (range))))))\n&quot;, :offset 5, :ns &quot;lab1.core&quot;} {:command &quot;(defn check [n x] `(and `(not (= ~x 0)) ~@(map (fn [e] `(= 0 (mod ~x ~e))) (map inc (take n (range))))))\n&quot;, :offset 34, :ns &quot;lab1.core&quot;} {:command &quot;(check 20 0)&quot;, :offset 11, :ns &quot;lab1.core&quot;} {:command &quot;(defn check [n x] `(and (not (= ~x 0)) ~@(map (fn [e] `(= 0 (mod ~x ~e))) (map inc (take n (range))))))\n&quot;, :offset 104, :ns &quot;lab1.core&quot;} {:command &quot;(check 20 5)&quot;, :offset 11, :ns &quot;lab1.core&quot;} {:command &quot;(check 10 0)&quot;, :offset 11, :ns &quot;lab1.core&quot;} {:command &quot;(defmacro check [n x] `(and (not (= ~x 0)) ~@(map (fn [e] `(= 0 (mod ~x ~e))) (map inc (take n (range))))))\n&quot;, :offset 108, :ns &quot;lab1.core&quot;} {:command &quot;(macroexpand `(check 10 0))&quot;, :offset 23, :ns &quot;lab1.core&quot;} {:command &quot;(println (macroexpand `(check 10 0))) &quot;, :offset 36, :ns &quot;lab1.core&quot;} {:command &quot;~&quot;, :offset 1} {:command &quot;(println (macroexpand `(check ~10 ~0))) &quot;, :offset 35, :ns &quot;lab1.core&quot;} {:command &quot;(println (check ~10 ~0)) &quot;, :offset 24, :ns &quot;lab1.core&quot;} {:command &quot;(println (check 10 0)) &quot;, :offset 16, :ns &quot;lab1.core&quot;} {:command &quot;(defn check [n x] `(and ~@(map (fn [e] `(= 0 (mod ~x ~e))) (map inc (take n (range))))))\n&quot;, :offset 89, :ns &quot;lab1.core&quot;} {:command &quot;(defmacro check [n x] `(and ~@(map (fn [e] `(= 0 (mod ~x ~e))) (map inc (take n (range))))))\n&quot;, :offset 9, :ns &quot;lab1.core&quot;} {:command &quot;(defmacro check [n x]  `(let [quantity# ~n \n                              X# ~x] \n                          `(and ~@(map (fn [e] `(= 0 (mod ~x ~e))) (map inc (take n (range)))))))\n&quot;, :offset 143, :ns &quot;lab1.core&quot;} {:command &quot;(defmacro check [n x]  `(let [quantity# ~n X# ~x] `(and ~@(map (fn [e] `(= 0 (mod ~X# ~e))) (map inc (take quantity# (range)))))))\n&quot;, :offset 85, :ns &quot;lab1.core&quot;} {:command &quot;(defmacro check [n x]  `(let [quantity# ~n X# ~x] `(and ~@(map (fn [e] `(= 0 (mod X# ~e))) (map inc (take quantity# (range)))))))\n&quot;, :offset 130, :ns &quot;lab1.core&quot;} {:command &quot;(defmacro check [n x] `(let [quantity# ~n X# ~x] `(and ~@(map (fn [e] `(= 0 (mod ~X# ~e))) (map inc (take ~quantity# (range)))))))\n&quot;, :offset 82, :ns &quot;lab1.core&quot;} {:command &quot;(defmacro check [n x] `(let [quantity# ~n X# ~x] `(and ~@(map (fn [e] `(= 0 (mod ~X# ~e))) (map inc (take quantity# (range)))))))\n&quot;, :offset 106, :ns &quot;lab1.core&quot;} {:command &quot;(check 10 2520)&quot;, :offset 14, :ns &quot;lab1.core&quot;} {:command &quot;(deftype  A [^{:volatile-mutable true} int]\n  Hash-it\n  (hash-it [this] (set! int (hash int))))\n&quot;, :offset 96, :ns &quot;lab1.core&quot;}], :remote []}}</component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="ReplState" timestamp="1560289316978">{:repl-history {:ide [], :local [{:command &quot;(check 10 2520)&quot;, :offset 14, :ns &quot;lab1.core&quot;} {:command &quot;(deftype  A [^{:volatile-mutable true} int]\n  Hash-it\n  (hash-it [this] (set! int (hash int))))\n&quot;, :offset 96, :ns &quot;lab1.core&quot;} {:command &quot;(defmacro for-loop [[symbol initial check-exp post-exp] &amp; code]\n  `(loop [~symbol ~initial]\n     (if ~check-exp\n       (do\n         ~@code\n         (recur ~post-exp)))))\n&quot;, :offset 170, :ns &quot;lab1.core&quot;} {:command &quot;(defmacro for-loop [[symbol initial check-exp post-exp] &amp; code]\n  `(loop [~symbol ~initial]\n     (if ~check-exp\n       (do\n         ~@code\n         (recur ~post-exp))))\n  \&quot;huy\&quot;\n\n  )&quot;, :offset 181, :ns &quot;lab1.core&quot;} {:command &quot;(defmacro for-loop [[symbol initial check-exp post-exp] &amp; code]\n  `(do(loop [~symbol ~initial]\n        (if ~check-exp\n          (do\n            ~@code\n            (recur ~post-exp))))\n      \&quot;HUY\&quot;)\n  )&quot;, :offset 3} {:command &quot;(macroexpand `(for-loop [i 0 (&lt; i 10) (inc i)]\n                        (print i)\n                        ))&quot;, :offset 107, :ns &quot;lab1.core&quot;} {:command &quot;(for-loop [i 0 (&lt; i 10) (inc i)]\n          (print i)\n          )&quot;, :offset 64, :ns &quot;lab1.core&quot;} {:command &quot;(for-loop [i 0 (&lt; i 10) (inc i)]\n          (do(print i)\n             (print \&quot;huy\&quot;))\n          )&quot;, :offset 80, :ns &quot;lab1.core&quot;} {:command &quot;(read-string (+ 1 1))&quot;, :offset 21, :ns &quot;lab1.core&quot;} {:command &quot;(read-string '(+ 1 1))&quot;, :offset 22, :ns &quot;lab1.core&quot;} {:command &quot;(read-string (prn-str (+ 1 1)))&quot;, :offset 22, :ns &quot;lab1.core&quot;} {:command &quot;(defmacro break []\n  `(print ~i))&quot;, :offset 33, :ns &quot;lab1.core&quot;} {:command &quot;(defmacro break []\n  `(print ~@i))&quot;, :offset 31, :ns &quot;lab1.core&quot;} {:command &quot;\n(macroexpand `(for-loop [i 0 (&lt; i 10) (inc i)]\n          (do(print i)\n             (print \&quot;huy\&quot;)\n             (break))\n          ))&quot;, :offset 15, :ns &quot;lab1.core&quot;} {:command &quot;\n(for-loop [i 0 (&lt; i 10) (inc i)]\n          (do(print i)\n             (print \&quot;huy\&quot;)\n             (break))\n          )&quot;, :offset 117, :ns &quot;lab1.core&quot;} {:command &quot;(defmacro break []\n  `(print \&quot;chlen\&quot;))&quot;, :offset 38, :ns &quot;lab1.core&quot;} {:command &quot;(for-loop [i 0 (&lt; i 10) (inc i)]\n          (do(print i)\n             (print \&quot;huy\&quot;)\n             (macroexpand `(break))))&quot;, :offset 110, :ns &quot;lab1.core&quot;} {:command &quot;(macroexpand `(for-loop [i 0 (&lt; i 10) (inc i)]\n          (do(print i)\n             (print \&quot;huy\&quot;)\n             (macroexpand `(break)))))&quot;, :offset 14, :ns &quot;lab1.core&quot;} {:command &quot;(defmacro for-loop [[symbol initial check-exp post-exp] &amp; code]\n  `(loop [~symbol ~initial]\n     (if ~check-exp\n       (do\n         ~@code\n         (recur ~post-exp)))))&quot;, :offset 169, :ns &quot;lab1.core&quot;} {:command &quot;(defmacro break []\n  `(print i))&quot;, :offset 32, :ns &quot;lab1.core&quot;} {:command &quot;(for-loop [i 0 (&lt; i 10) (inc i)]\n          (do(print i)\n             (print \&quot;huy\&quot;)\n             (macroexpand '(break))))&quot;, :offset 110, :ns &quot;lab1.core&quot;} {:command &quot;(macroexpand '(for-loop [i 0 (&lt; i 10) (inc i)]\n          (do(print i)\n             (print \&quot;huy\&quot;)\n             (macroexpand-1 '(break)))))&quot;, :offset 124, :ns &quot;lab1.core&quot;} {:command &quot;(macroexpand-1 '(for-loop [i 0 (&lt; i 10) (inc i)]\n          (do(print i)\n             (print \&quot;huy\&quot;)\n             (macroexpand-1 '(break)))))&quot;, :offset 14, :ns &quot;lab1.core&quot;} {:command &quot;(macroexpand-1 '(for-loop [i 0 (&lt; i 10) (inc i)]\n          (do(print i)\n             (print \&quot;huy\&quot;)\n             (macroexpand '(break)))))&quot;, :offset 124, :ns &quot;lab1.core&quot;} {:command &quot;(macroexpand '(for-loop [i 0 (&lt; i 10) (inc i)]\n          (do(print i)\n             (print \&quot;huy\&quot;)\n             (macroexpand '(break)))))&quot;, :offset 12, :ns &quot;lab1.core&quot;} {:command &quot;(macroexpand '(for-loop [i 0 (&lt; i 10) (inc i)]\n          (do(print i)\n             (print \&quot;huy\&quot;)\n             (break))))&quot;, :offset 117, :ns &quot;lab1.core&quot;} {:command &quot;(for-loop [i 0 (&lt; i 10) (inc i)]\n          (do(print i)\n             (print \&quot;huy\&quot;)\n             (break)))&quot;, :offset 0, :ns &quot;lab1.core&quot;} {:command &quot;(def *foo* \&quot;(println [1 2 3])\&quot;)&quot;, :offset 31, :ns &quot;lab1.core&quot;} {:command &quot;(def foo \&quot;(println [1 2 3])\&quot;)&quot;, :offset 5, :ns &quot;lab1.core&quot;} {:command &quot;foo&quot;, :offset 3, :ns &quot;lab1.core&quot;} {:command &quot;(eval foo)&quot;, :offset 9, :ns &quot;lab1.core&quot;} {:command &quot;(def i 5)&quot;, :offset 8, :ns &quot;lab1.core&quot;} {:command &quot;(def foo \&quot;(println i)\&quot;)&quot;, :offset 20, :ns &quot;lab1.core&quot;} {:command &quot;(eval (read-string foo))&quot;, :offset 19, :ns &quot;lab1.core&quot;} {:command &quot;(loop [i 0]\n  (eval (read-string foo))\n  (if (not (= 10 i)) (recur (inc i)) ())\n  )&quot;, :offset 82, :ns &quot;lab1.core&quot;} {:command &quot;(def foo \&quot;(println j)\&quot;)&quot;, :offset 20, :ns &quot;lab1.core&quot;} {:command &quot;(loop [j 0]\n  (eval (read-string foo))\n  (if (not (= 10 j)) (recur (inc j)) ())\n  )&quot;, :offset 8, :ns &quot;lab1.core&quot;} {:command &quot;(let [i 0]\n  (eval (read-string foo)))&quot;, :offset 35, :ns &quot;lab1.core&quot;} {:command &quot;(let [j 0]\n  (eval (read-string foo)))&quot;, :offset 7, :ns &quot;lab1.core&quot;} {:command &quot;(defmacro for-loop [[symbol initial check-exp post-exp] &amp; code]\n  `(loop [~symbol ~initial]\n     (if ~check-exp\n       (do\n         (println ~symbol)\n         ~@code\n         (recur ~post-exp)))))&quot;, :offset 196, :ns &quot;lab1.core&quot;} {:command &quot;aset-double&quot;, :offset 11, :ns &quot;lab1.core&quot;} {:command &quot;(eval (read-string \&quot;)\&quot;))&quot;, :offset 21, :ns &quot;lab1.core&quot;} {:command &quot;(eval ))&quot;, :offset 6, :ns &quot;lab1.core&quot;} {:command &quot;(eval  \&quot;)\&quot;)&quot;, :offset 9, :ns &quot;lab1.core&quot;} {:command &quot;(doc doseq)&quot;, :offset 10, :ns &quot;lab1.core&quot;} {:command &quot;(doseq [n (range 1 11)]\n  (print n)\n  (if (zero? (rem n 5))\n    (println)\n    (print \&quot;, \&quot;)))&quot;, :offset 92, :ns &quot;lab1.core&quot;} {:command &quot;(def xs [0])&quot;, :offset 12, :ns &quot;lab1.core&quot;} {:command &quot;(rest xs)&quot;, :offset 8, :ns &quot;lab1.core&quot;} {:command &quot;(loop [xs (range 1 11)]\n  (if (= xs 4)\n    (break)))&quot;, :offset 49, :ns &quot;lab1.core&quot;} {:command &quot;(loop [xs (range 1 11)]\n  (println xs)\n  (if (= xs 4)\n    (break)))&quot;, :offset 37, :ns &quot;lab1.core&quot;} {:command &quot;(loop [xs (range 1 11)]\n  (println (first xs))\n  (if (= xs 4)\n    (break)))&quot;, :offset 42, :ns &quot;lab1.core&quot;} {:command &quot;(loop [xs (range 1 11)]\n  (println (first xs))\n  (if (= xs 4)\n    (break)\n    (recur (rest xs))))&quot;, :offset 93, :ns &quot;lab1.core&quot;} {:command &quot;(defmacro break [] `(recur '()))\n&quot;, :offset 33, :ns &quot;lab1.core&quot;} {:command &quot;(loop [xs (range 1 11)]\n  (println (first xs))\n  (if (= (first xs) 4)\n    (break)\n    (recur (rest xs))))&quot;, :offset 105, :ns &quot;lab1.core&quot;} {:command &quot;(defmacro break [] `(recur []))\n&quot;, :offset 29, :ns &quot;lab1.core&quot;} {:command &quot;(loop [xs (range 1 11)]\n  (println (first xs))\n  (if (= (first xs) 4)\n    (println \&quot;GOVNO!\&quot;)\n    (recur (rest xs))))&quot;, :offset 116, :ns &quot;lab1.core&quot;} {:command &quot;(defmacro break [] `())\n&quot;, :offset 24, :ns &quot;lab1.core&quot;} {:command &quot;\n(loop [xs (range 1 11)]\n  (println (first xs))\n  (if (= (first xs) 4)\n    (break)\n    (recur (rest xs))))&quot;, :offset 106, :ns &quot;lab1.core&quot;} {:command &quot;(defmacro infix-2\n  [operand1 op operand2]\n  (list op operand1 operand2))&quot;, :offset 20, :ns &quot;lab1.core&quot;} {:command &quot;(infix-2 1 + 2)&quot;, :offset 14, :ns &quot;lab1.core&quot;} {:command &quot;(infix-2 '(1 + 2))&quot;, :offset 16, :ns &quot;lab1.core&quot;} {:command &quot;(defmacro infix-2\n   [operand1 op operand2]\n  (list op operand1 operand2))&quot;, :offset 43, :ns &quot;lab1.core&quot;} {:command &quot;(defmacro infix-2\n   [[operand1 op operand2]]\n  (list op operand1 operand2))&quot;, :offset 22, :ns &quot;lab1.core&quot;} {:command &quot;(infix-2 (1 + 2))&quot;, :offset 9, :ns &quot;lab1.core&quot;} {:command &quot;(infix-2 (1 + 2 + 3))&quot;, :offset 19, :ns &quot;lab1.core&quot;} {:command &quot;(defmacro break [] \&quot;chlen\&quot; `(recur nil))&quot;, :offset 25, :ns &quot;lab1.core&quot;} {:command &quot;(defmacro break [] (println \&quot;chlen\&quot;) `(recur nil))&quot;, :offset 28, :ns &quot;lab1.core&quot;} {:command &quot;(defmacro break [] `(recur nil))&quot;, :offset 18, :ns &quot;lab1.core&quot;} {:command &quot;(break)&quot;, :offset 6, :ns &quot;lab1.core&quot;} {:command &quot;(defmacro break  `(recur nil))&quot;, :offset 16, :ns &quot;lab1.core&quot;} {:command &quot;\n(defmacro my-print\n  [expression]\n  (println (eval expression))\n  expression)\n\n\n\n&quot;, :offset 82, :ns &quot;lab1.core&quot;} {:command &quot;(defmacro my-print\n  [expression]\n  (println (first expression))\n  (println (eval expression))\n  expression)\n&quot;, :offset 109, :ns &quot;lab1.core&quot;} {:command &quot;(macroexpand (my-print (+ 1 1)))&quot;, :offset 29, :ns &quot;lab1.core&quot;} {:command &quot;(defmacro my-print\n  [expression]\n  (println (eval expression))\n  expression)&quot;, :offset 77, :ns &quot;lab1.core&quot;} {:command &quot;(defmacro my-print\n  [expression]\n  (list 'let ['result expression]\n        (list 'println 'result)\n        'result))&quot;, :offset 117, :ns &quot;lab1.core&quot;} {:command &quot;(macroexpand '(my-print (+ 1 1)))&quot;, :offset 14, :ns &quot;lab1.core&quot;} {:command &quot;(defstruct hash-map-1 :key :value)&quot;, :offset 33, :ns &quot;lab1.core&quot;} {:command &quot;(struct hash-map-1 \&quot;asd\&quot; 123)&quot;, :offset 28, :ns &quot;lab1.core&quot;} {:command &quot;(def a (struct hash-map-1 \&quot;asd\&quot; 123))&quot;, :offset 37, :ns &quot;lab1.core&quot;} {:command &quot;(:key a)&quot;, :offset 7, :ns &quot;lab1.core&quot;} {:command &quot;(defn criticize-code\n  [criticism code]\n  (println criticism (quote ~code)))&quot;, :offset 51, :ns &quot;lab1.core&quot;} {:command &quot;(code-critic '(1 + 1) '(+ 1 1))&quot;, :offset 14, :ns &quot;lab1.core&quot;} {:command &quot;(defn criticize-code\n  [criticism code]\n  (println ~criticism (quote ~code)))&quot;, :offset 77, :ns &quot;lab1.core&quot;} {:command &quot;(defmacro code-critic\n  [bad good](do ~(criticize-code \&quot;Cursed bacteria of Liberia, this is bad code:\&quot; bad)\n                ~(criticize-code \&quot;Sweet sacred boa of Western and Eastern Samoa, this is good code:\&quot; good)))&quot;, :offset 216, :ns &quot;lab1.core&quot;} {:command &quot;(macroexpand (code-critic (1 + 1) (+ 1 1)))&quot;, :offset 13, :ns &quot;lab1.core&quot;} {:command &quot;(defmacro code-critic\n  [bad good]\n  `(do ~(criticize-code \&quot;Cursed bacteria of Liberia, this is bad code:\&quot; bad)\n       ~(criticize-code \&quot;Sweet sacred boa of Western and Eastern Samoa, this is good code:\&quot; good)))&quot;, :offset 211, :ns &quot;lab1.core&quot;} {:command &quot;(defn criticize-code\n  [criticism code]\n  `(println criticism (quote ~code)))&quot;, :offset 52, :ns &quot;lab1.core&quot;} {:command &quot;(defn criticize-code\n  [criticism code]\n  `(println ~criticism '~code))&quot;, :offset 64, :ns &quot;lab1.core&quot;} {:command &quot;(criticize-code \&quot;asd\&quot; (+ 1 1))&quot;, :offset 20, :ns &quot;lab1.core&quot;} {:command &quot;(defmacro code-critic\n  [bad good]\n  `(do ~(criticize-code \&quot;Cursed bacteria of Liberia, this is bad code:\&quot; ~bad)\n       ~(criticize-code \&quot;Sweet sacred boa of Western and Eastern Samoa, this is good code:\&quot; ~good)))&quot;, :offset 206, :ns &quot;lab1.core&quot;} {:command &quot;(code-critic (1 + 1) (+ 1 1))&quot;, :offset 29, :ns &quot;lab1.core&quot;} {:command &quot;(defn criticize-code\n  [criticism code]\n  `(println ~criticism (quote ~code)))&quot;, :offset 78, :ns &quot;lab1.core&quot;} {:command &quot;(defn criticize-code\n  [criticism code]\n  (println code)\n  `(println ~criticism (quote ~code)))&quot;, :offset 95, :ns &quot;lab1.core&quot;} {:command &quot;(criticize-code \&quot;GOVNO:\&quot; '(+ 1 1))&quot;, :offset 26, :ns &quot;lab1.core&quot;} {:command &quot;(criticize-code \&quot;GOVNO:\&quot; (+ 1 1))&quot;, :offset 25, :ns &quot;lab1.core&quot;} {:command &quot;(defmacro code-critic\n  [bad good]\n  `(println ~bad)\n  )&quot;, :offset 56, :ns &quot;lab1.core&quot;} {:command &quot;(defn criticize-code\n  [criticism code]\n  (println code)\n  `(println ~criticism (quote ~code)))\n\n(defmacro code-critic\n  [bad good]\n  `(do ~(criticize-code \&quot;Cursed bacteria of Liberia, this is bad code:\&quot;\n                        bad)\n       ~(criticize-code \&quot;Sweet sacred boa of Western and Eastern Samoa, this is good code:\&quot;\n                        good))\n  )&quot;, :offset 359, :ns &quot;lab1.core&quot;} {:command &quot;(code-critic (+ 2143 4214) \&quot;asdsad\&quot;)&quot;, :offset 34, :ns &quot;lab1.core&quot;} {:command &quot;(defn criticize-code\n  [criticism code]\n  (println code)\n  `(println ~criticism ~@code))\n\n(defmacro code-critic\n  [bad good]\n  `(do ~(criticize-code \&quot;Cursed bacteria of Liberia, this is bad code:\&quot;\n                        bad)\n       ~(criticize-code \&quot;Sweet sacred boa of Western and Eastern Samoa, this is good code:\&quot;\n                        good))\n  )&quot;, :offset 352, :ns &quot;lab1.core&quot;} {:command &quot;(code-critic (+ 2143 4214) (+ 1 2))&quot;, :offset 33, :ns &quot;lab1.core&quot;}], :remote []}}</component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -159,7 +192,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Clojure Application.tests">
+  <component name="RunManager" selected="Clojure Application.core">
     <configuration name="Unnamed" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false" nameIsGenerated="true">
       <module name="lab1" />
       <setting name="replType" value="NREPL" />
@@ -189,18 +222,6 @@
       <module name="" />
       <method v="2" />
     </configuration>
-    <configuration name="core (1)" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
-      <module name="lab1" />
-      <setting name="path" value="$PROJECT_DIR$/src/lab2/core.clj" />
-      <setting name="namespace" value="" />
-      <setting name="execution" value="INTELLIJ" />
-      <setting name="profiles" value="" />
-      <setting name="aliases" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="$PROJECT_DIR$/src/lab2" />
-      <method v="2" />
-    </configuration>
     <configuration name="core" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
       <module name="lab1" />
       <setting name="path" value="$PROJECT_DIR$/src/lab2/core.clj" />
@@ -213,57 +234,26 @@
       <setting name="workDir" value="$PROJECT_DIR$/src/lab2" />
       <method v="2" />
     </configuration>
-    <configuration name="pg" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
+    <configuration name="lab4-core" type="ClojureScriptRunConfiguration" factoryName="Clojure Script">
       <module name="lab1" />
-      <setting name="path" value="$PROJECT_DIR$/src/playground/pg.clj" />
+      <setting name="path" value="$PROJECT_DIR$/src/lab4/core.clj" />
       <setting name="namespace" value="" />
       <setting name="execution" value="INTELLIJ" />
       <setting name="profiles" value="" />
       <setting name="aliases" value="" />
       <setting name="vmparams" value="" />
       <setting name="params" value="" />
-      <setting name="workDir" value="$PROJECT_DIR$/src/playground" />
-      <method v="2" />
-    </configuration>
-    <configuration name="tests (1)" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
-      <module name="lab1" />
-      <setting name="path" value="$PROJECT_DIR$/src/lab2/tests.clj" />
-      <setting name="namespace" value="" />
-      <setting name="execution" value="INTELLIJ" />
-      <setting name="profiles" value="" />
-      <setting name="aliases" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="$PROJECT_DIR$/src/lab2" />
-      <method v="2" />
-    </configuration>
-    <configuration name="tests" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
-      <module name="lab1" />
-      <setting name="path" value="$PROJECT_DIR$/src/lab2/tests.clj" />
-      <setting name="namespace" value="" />
-      <setting name="execution" value="INTELLIJ" />
-      <setting name="profiles" value="" />
-      <setting name="aliases" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="$PROJECT_DIR$/src/lab2" />
+      <setting name="workDir" value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Clojure Application.pg" />
-      <item itemvalue="Clojure Application.tests (1)" />
-      <item itemvalue="Clojure Application.core (1)" />
-      <item itemvalue="Clojure Application.tests" />
-      <item itemvalue="Clojure Application.core" />
+      <item itemvalue="Clojure Application.lab4-core" />
       <item itemvalue="Clojure REPL.Unnamed" />
+      <item itemvalue="Clojure Application.core" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Clojure Application.tests" />
         <item itemvalue="Clojure Application.core" />
-        <item itemvalue="Clojure Application.tests (1)" />
-        <item itemvalue="Clojure Application.core (1)" />
-        <item itemvalue="Clojure Application.pg" />
       </list>
     </recent_temporary>
   </component>
@@ -299,7 +289,10 @@
       <workItem from="1559759086745" duration="6159000" />
       <workItem from="1559774903616" duration="3312000" />
       <workItem from="1559819451643" duration="9876000" />
-      <workItem from="1559838199263" duration="181000" />
+      <workItem from="1559838199263" duration="1720000" />
+      <workItem from="1559858577664" duration="10000" />
+      <workItem from="1560196680387" duration="7585000" />
+      <workItem from="1560256407402" duration="21044000" />
     </task>
     <task id="LOCAL-00001" summary="linear approx ready, changing it to use closure">
       <created>1556993846927</created>
@@ -364,11 +357,18 @@
       <option name="project" value="LOCAL" />
       <updated>1559834589538</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="code beautified">
+      <created>1559838543721</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1559838543721</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82190000" />
+    <option name="totallyTimeSpent" value="112368000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -380,10 +380,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="953" y="0" width="974" height="1087" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10341151" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.078774616" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -392,7 +392,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.39937106" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.19601677" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997923" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -413,7 +413,7 @@
       <window_info anchor="right" id="Leiningen" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
-      <window_info anchor="right" id="REPL" order="10" side_tool="true" weight="0.66101694" />
+      <window_info anchor="right" id="REPL" order="10" side_tool="true" weight="0.4173774" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -424,25 +424,18 @@
     <MESSAGE value="savepoint" />
     <MESSAGE value="lab3 is almost ready, must fix the code and add tests to 'approximate' and 'lagrange'" />
     <MESSAGE value="tests made" />
-    <MESSAGE value="code beautified" />
     <MESSAGE value="added playground" />
     <MESSAGE value="idk what to do with second" />
     <MESSAGE value="genius step: must change methods and add deletion" />
     <MESSAGE value="tests ready, lab seems to be finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="tests ready, lab seems to be finished" />
+    <MESSAGE value="code beautified" />
+    <option name="LAST_COMMIT_MESSAGE" value="code beautified" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/project.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lab1/second.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="11" />
         </state>
       </provider>
     </entry>
@@ -461,13 +454,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab2/lab2.clj" />
-    <entry file="file://$PROJECT_DIR$/src/lab3/core.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="49" column="34" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/lab3/tests.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -475,24 +461,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/playground/pg.clj">
+    <entry file="file://$PROJECT_DIR$/src/lab2/tests.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="215" selection-start-line="215" selection-end-line="218" selection-end-column="29" />
+        <state relative-caret-position="1326">
+          <caret line="78" selection-start-line="78" selection-end-line="78" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lab2/tests.clj">
+    <entry file="file://$PROJECT_DIR$/src/lab3/core.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="747">
-          <caret line="116" selection-start-line="116" selection-end-line="116" />
+        <state relative-caret-position="483">
+          <caret line="49" column="34" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab1/second.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab4/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/playground/pg.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab2/core.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="768">
-          <caret line="139" column="88" lean-forward="true" selection-start-line="139" selection-start-column="88" selection-end-line="139" selection-end-column="88" />
+        <state relative-caret-position="563">
+          <caret line="140" column="47" selection-start-line="140" selection-start-column="47" selection-end-line="140" selection-end-column="47" />
+          <folding>
+            <element signature="e#19#216#0" />
+            <element signature="e#252#437#0" />
+            <element signature="e#440#1007#0" />
+            <element signature="e#1010#1487#0" />
+            <element signature="e#1490#2052#0" />
+            <element signature="e#2055#2240#0" />
+            <element signature="e#2243#2500#0" />
+            <element signature="e#2503#2752#0" />
+            <element signature="e#2755#2892#0" />
+          </folding>
         </state>
       </provider>
     </entry>
