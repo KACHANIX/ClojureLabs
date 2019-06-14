@@ -19,19 +19,19 @@
         sum))))
 
 
-(defn put [elements new-element]
+(defn put [elements key value]
   (if (= (count elements) (count (filter not-nil? elements)))
     "Hash-map is full!"
-    (loop [index (mod (hash-sum (:key new-element)) (count elements))]
+    (loop [index (mod (hash-sum key) (count elements))]
       (if (nil? (nth elements index))
         (do
           "Element is successfully added!"
-          (assoc elements index new-element)
+          (assoc elements index (struct hash-map-element key value))
           )
-        (if (= (:key (nth elements index)) (:key new-element))
+        (if (= (:key (nth elements index)) key)
           (do
             "Element is successfully added!"
-            (assoc elements index new-element))
+            (assoc elements index (struct hash-map-element key value)))
           (recur (mod (+ 1 index) (count elements))))))))
 
 (defn get-by-key [elements key]
@@ -89,8 +89,8 @@
         hash-table-2
         (loop [iter 0
                filtered-hash-table-2 hash-table-2
-               merged-hash-table (vec (repeat (+ (count hash-table-1)
-                                                 (count hash-table-2)) nil))]
+               merged-hash-table (vec (repeat (* 10 (+ (count hash-table-1)
+                                                 (count hash-table-2))) nil))]
           (if (= iter (count hash-table-1))
             (do
               (loop [left-hash-table-2-elements (vec (filter not-nil? filtered-hash-table-2))
@@ -98,34 +98,33 @@
                 (if (= 0 (count left-hash-table-2-elements))
                   output-merged-hash-table
                   (recur (rest left-hash-table-2-elements)
-                         (put output-merged-hash-table (first left-hash-table-2-elements))))))
+                         (put output-merged-hash-table (:key (first left-hash-table-2-elements)) (:value (first left-hash-table-2-elements)))))))
             (if (nil? (nth hash-table-1 iter))
               (recur (inc iter) filtered-hash-table-2 merged-hash-table)
               (do
                 (if (nil? (get-by-key hash-table-2
                                       (:key (nth hash-table-1 iter))))
                   (recur (inc iter) filtered-hash-table-2
-                         (put merged-hash-table (nth hash-table-1 iter)))
+                         (put merged-hash-table (:key (nth hash-table-1 iter)) (:value (nth hash-table-1 iter))))
                   (do
                     (if (= 1 (resolver (nth hash-table-1 iter)
                                        (struct hash-map-element
                                                (:key (nth hash-table-1 iter))
                                                (get-by-key hash-table-2
-                                                           (:key hash-table-1 iter)))))
+                                                           (:key (nth hash-table-1 iter))))))
                       (recur (inc iter)
                              (filter #(not (=
                                              (:key (nth hash-table-1 iter))
                                              (:key %))) filtered-hash-table-2)
-                             (put merged-hash-table (nth hash-table-1 iter)))
+                             (put merged-hash-table (:key (nth hash-table-1 iter)) (:value (nth hash-table-1 iter))))
 
                       (recur (inc iter)
                              (filter #(not (=
                                              (:key (nth hash-table-1 iter))
                                              (:key %))) filtered-hash-table-2)
                              (put merged-hash-table
-                                  (struct hash-map-element
                                           (:key (nth hash-table-1 iter))
-                                          (get-by-key hash-table-2 (:key (nth hash-table-1 iter)))))))))))))))))
+                                          (get-by-key hash-table-2 (:key (nth hash-table-1 iter))))))))))))))))
 
 
 ;(def a (vec (repeat 5 nil)))
@@ -134,13 +133,11 @@
 
 
 
-
-(def a (vec (repeat 5 nil)))
-(def b (vec (repeat 5 nil)))
-(println (merge-hash-tables (put (put a (struct hash-map-element "asd" 123))
-                                 (struct hash-map-element"dsa" 124))
-                            (put (put b (struct hash-map-element "bsd" 321))
-                                 (struct hash-map-element "dsb" 421))) )
+;
+;(def a (vec (repeat 5 nil)))
+;(def b (vec (repeat 5 nil)))
+;(println (merge-hash-tables (put (put a "asd" 123) "dsa" 124)
+;                            (put (put b "asd" 320) "dsb" 421)))
 ;(filter-hash-table a even?)
 ;(println (get-elements a))
 ;(remove-by-key a "asd")

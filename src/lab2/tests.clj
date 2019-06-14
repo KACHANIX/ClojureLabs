@@ -1,111 +1,113 @@
 (ns lab2.tests
-  (:use clojure.test))
+  (:use clojure.test
+        lab2.core)
+  (:require
+    [clojure.test :refer :all]
+    [clojure.test.check :as tc]
+    [clojure.test.check.clojure-test :refer (defspec)]
+    [clojure.test.check.generators :as gen]
+    [clojure.test.check.properties :as prop]))
 
-(use 'lab2.core)
+(defn gen-hash-map [quantity]
+  (loop [generated-hash-map (vec (repeat quantity nil))
+         iter 0]
+    (if (not (even? iter))
+      (recur generated-hash-map (inc iter))
+      (if (= quantity iter)
+        generated-hash-map
+        (recur (put generated-hash-map
+                    (gen/generate gen/string-ascii)
+                    (gen/generate gen/int))
+               (inc iter))))))
 
-;;;Property based tests
 
+;;Property based tests
 ;Associative property of merge operation
 ;(a + b) + c = a + (b + c)
-(def a (->hash-map-type (vec (repeat 5 nil))))
-(def b (->hash-map-type (vec (repeat 5 nil))))
-(def c (->hash-map-type (vec (repeat 5 nil))))
 
-(put a {:key "A" :value 1})
-(put a {:key "ASD" :value 1})
-(put b {:key "B" :value 2})
-(put b {:key "BSD" :value 2})
-(put c {:key "C" :value 3})
-(put c {:key "CSD" :value 3})
+(defspec associativity-test 50
+         (prop/for-all
+           [d gen/int]
+           (let [a (gen-hash-map 10)
+                 b (gen-hash-map 10)
+                 c (gen-hash-map 10)]
+             (is (=
+                   (merge-hash-tables (merge-hash-tables a b) c)
+                   (merge-hash-tables a (merge-hash-tables b c)))))))
 
-(deftest is-associative
-  (is (=
-        (do
-          (merge-hash-tables a b) (merge-hash-tables a c)
-          a)
-        (do
-          (merge-hash-tables b c) (merge-hash-tables a b)
-          a))))
+
+
 
 ;Are hash-maps unqiue
 ;a + a = a
-(deftest is-equal
-  (is (=
-        (do (merge-hash-tables a a)
-            a)
-        a)))
+
+(defspec is-equal-test 100
+         (prop/for-all
+           [d gen/int]
+           (let [a (gen-hash-map 10)]
+             (is (=
+                   (merge-hash-tables a a)
+                   a)))))
 
 ;Is there a unit
 ;aE = a = Ea
 
-(def nil-map (->hash-map-type nil))
-(deftest is-unit
-  (is (=
-        (do
-          (merge-hash-tables a nil-map) (get-elements a))
-        (get-elements a)
-        (do
-          (merge-hash-tables nil-map a)
-          (get-elements nil-map)))))
+
+(defspec is-unit 50
+         (prop/for-all
+           [d gen/int]
+           (let [a (gen-hash-map 10)]
+             (is (=
+                   (merge-hash-tables a nil)
+                   a
+                   (merge-hash-tables nil a)
+                   )))))
+
+
+
 
 
 ;;;Unit tests (all functions)
-(def unit-1 (->hash-map-type (vec (repeat 5 nil))))
-(def unit-2 (->hash-map-type (vec (repeat 5 nil))))
+(def unit-1 (vec (repeat 5 nil)))
+(def unit-2 (vec (repeat 5 nil)))
+
 (deftest put-and-get-test
   (is (=
-        (do
-          (put unit-1 {:key "firstkey" :value 123})
-          (get-by-key unit-1 "firstkey"))
+        (get-by-key (put unit-1 "firstkey" 123) "firstkey")
         123)))
 ;(println (str "elements: " (get-elements unit-1)))
 
 (deftest map-hash-table-elements-test
   (is (=
-        (do
-          (put unit-1 {:key "firstkey" :value 123})
-          (map-hash-table-elements unit-1 inc)
-          (get-by-key unit-1 "firstkey"))
+        (get-by-key (map-hash-table-elements (put unit-1 "firstkey" 123) inc) "firstkey")
         124)))
 
 (deftest filter-hash-table-test
   (is (=
-        (do
-          (put unit-1 {:key "firstkey" :value 123})
-          (put unit-1 {:key "secondkey" :value 120})
-          (filter-hash-table unit-1 even?)
-          (get-by-key unit-1 "firstkey"))
+        (get-by-key (filter-hash-table (put (put unit-1 "firstkey" 123) "secondkey" 120) even?) "firstkey")
         nil)))
 
 (deftest fold-left-test
   (is (=
-        (do
-          (put unit-1 {:key "firstkey" :value 123})
-          (put unit-1 {:key "secondkey" :value 120})
-          (fold-left unit-1 +))
+        (fold-left (put (put unit-1 "firstkey" 123) "secondkey" 120) +)
         243)))
 
 (deftest merge-hash-tables-test
   (is (=
-        (do
-          (put unit-1 {:key "firstkey" :value 123})
-          (put unit-1 {:key "secondkey" :value 120})
-          (put unit-2 {:key "unit2-element" :value 45})
-          (merge-hash-tables unit-1 unit-2)
-          (get-by-key unit-1 "unit2-element"))
+
+        (get-by-key (merge-hash-tables (put (put unit-1 "firstkey" 123) "secondkey" 120)
+                                       (put unit-2 "unit2-element" 45))
+                    "unit2-element")
         45)))
 
 (deftest fold-right-test
   (is (=
-        (fold-right unit-1 -)
-        -198)))
+        (fold-right (put (put unit-1 "firstkey" 123) "secondkey" 120) -)
+        -3)))
 
 (deftest remove-by-key-test
   (is (=
-        (do
-          (put unit-1 {:key "firstkey" :value 123})
-          (remove-by-key unit-1 "firstkey")
-          (get-by-key unit-1 "firstkey"))
+        (get-by-key (remove-by-key (put unit-1 "firstkey" 123) "firstkey") "firstkey")
         nil)))
 
 (run-tests)
