@@ -1,23 +1,35 @@
 (ns lab3.tests
-  (:use clojure.test))
+  (:use clojure.test
+        lab3.linear-segments-interpolation))
 
-(use 'lab3.core)
+(deftest linear-segments-test
+  (let [a [-1 1]
+        b [1 3]
+        f (generate-linear-segments-function a b)
+        x-values [-1.000 -0.750 -0.500 -0.250 0.000 0.250 0.500 0.750 1.000]
+        actual-y-values [1.000 1.250 1.500 1.750 2.000 2.250 2.500 2.750 3.000]
+        tested-values (map #(conj [] (f %)) x-values)]
+    (loop [iter 0]
+      (if (not (= iter (count actual-y-values)))
+        (is (=
+              (nth actual-y-values iter)
+              (first (nth tested-values iter))))))))
 
-(defn f1 [x]
-  (+ (* 3.0 x x) 3.5 (- (* 5.0 x x x (/ 1.0 12.0))) (- (* 61.0 x (/ 1.0 12.0)))))
-
-(defn f2 [x]
-  (+ (* 47 x x x x (/ 1 2016)) (- (* 25 x x x (/ 1 56))) (* 5233 x x (/ 1 2016)) (- (* 337 x (/ 1 84))) (/ 159 56)))
-
-(deftest lagrange-1
-  (is (=
-        (map #(float (f1 %)) (range 1.0 5.0 0.25))
-        (map #(float %) (lagrange 1 5 '(1.0 2.0 3.0 5.0) '(1.0 2.0 4.0 1.0) 0.25)))))
-
-
-(deftest lagrange-2
-  (is (=
-        (map #(float (f2 %)) (range 1.0 10.0 0.5))
-        (map #(float %) (lagrange 1 10 '(1.0 2.0 3.0 6.0 10.0) '(1.0 2.0 4.0 6.0 9.0) 0.5)))))
+(deftest lagrange-interpolation-test
+  (let [x-values-to-gen [1 2 3 4 5]
+        y-values-to-gen [2 3 4 5 6]
+        f (generate-linear-segments-function x-values-to-gen y-values-to-gen)
+        x-values [-1.000 -0.750 -0.500 -0.250 0.000 0.250 0.500 0.750 1.000]
+        actual-y-values [0.000 0.250 0.500 0.750 1.000 1.250 1.500 1.750 2.000]
+        tested-values (map #(conj [] (f %)) x-values)]
+    (loop [iter 0]
+      (if (not (= iter (count actual-y-values)))
+        (is (=
+              (nth actual-y-values iter)
+              (first (nth tested-values iter))))))))
 
 (run-tests)
+;
+;(def a (generate-linear-segments-function [1 2 3 4 5]
+;                                          [2 3 4 5 6]))
+;(println(map #(conj [] (a %)) [-1.000 -0.750 -0.500 -0.250 0.000 0.250 0.500 0.750 1.000]))

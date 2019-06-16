@@ -60,12 +60,7 @@
              (is (=
                    (merge-hash-tables a nil)
                    a
-                   (merge-hash-tables nil a)
-                   )))))
-
-
-
-
+                   (merge-hash-tables nil a))))))
 
 ;;;Unit tests (all functions)
 (def unit-1 (vec (repeat 5 nil)))

@@ -19,66 +19,66 @@
         sum))))
 
 
-(defn put [elements key value]
-  (if (= (count elements) (count (filter not-nil? elements)))
+(defn put [hash-table key value]
+  (if (= (count hash-table) (count (filter not-nil? hash-table)))
     "Hash-map is full!"
-    (loop [index (mod (hash-sum key) (count elements))]
-      (if (nil? (nth elements index))
+    (loop [index (mod (hash-sum key) (count hash-table))]
+      (if (nil? (nth hash-table index))
         (do
           "Element is successfully added!"
-          (assoc elements index (struct hash-map-element key value))
+          (assoc hash-table index (struct hash-map-element key value))
           )
-        (if (= (:key (nth elements index)) key)
+        (if (= (:key (nth hash-table index)) key)
           (do
             "Element is successfully added!"
-            (assoc elements index (struct hash-map-element key value)))
-          (recur (mod (+ 1 index) (count elements))))))))
+            (assoc hash-table index (struct hash-map-element key value)))
+          (recur (mod (+ 1 index) (count hash-table))))))))
 
-(defn get-by-key [elements key]
-  (loop [index (mod (hash-sum key) (count elements)) iterations-count 0]
-    (if (and (not= key (:key (nth elements index)))
-             (not-nil? (nth elements index))
-             (not= iterations-count (count elements)))
-      (recur (mod (+ 1 index) (count elements)) (inc iterations-count))
-      (if (or (nil? (nth elements index))
-              (= iterations-count (count elements)))
+(defn get-by-key [hash-table key]
+  (loop [index (mod (hash-sum key) (count hash-table)) iterations-count 0]
+    (if (and (not= key (:key (nth hash-table index)))
+             (not-nil? (nth hash-table index))
+             (not= iterations-count (count hash-table)))
+      (recur (mod (+ 1 index) (count hash-table)) (inc iterations-count))
+      (if (or (nil? (nth hash-table index))
+              (= iterations-count (count hash-table)))
         nil
-        (:value (nth elements index))))))
+        (:value (nth hash-table index))))))
 
-(defn remove-by-key [elements key]
-  (loop [index (mod (hash-sum key) (count elements)) iterations-count 0]
-    (if (and (not= key (:key (nth elements index)))
-             (not-nil? (nth elements index))
-             (not= iterations-count (count elements)))
-      (recur (mod (+ 1 index) (count elements)) (inc iterations-count))
-      (if (or (nil? (nth elements index))
-              (= iterations-count (count elements)))
+(defn remove-by-key [hash-table key]
+  (loop [index (mod (hash-sum key) (count hash-table)) iterations-count 0]
+    (if (and (not= key (:key (nth hash-table index)))
+             (not-nil? (nth hash-table index))
+             (not= iterations-count (count hash-table)))
+      (recur (mod (+ 1 index) (count hash-table)) (inc iterations-count))
+      (if (or (nil? (nth hash-table index))
+              (= iterations-count (count hash-table)))
         (str key " is not found!")
         (do
           (str key " is successfully removed")
-          (assoc elements index nil))))))
+          (assoc hash-table index nil))))))
 
-(defn map-hash-table-elements [elements f]
+(defn map-hash-table-elements [hash-table f]
   (vec (map #(if (not-nil? %)
                (hash-map :key (:key %),
                          :value (f (:value %))))
-            elements)))
+            hash-table)))
 
-(defn fold-left [elements f & initial-value]
+(defn fold-left [hash-table f & initial-value]
   (if (= initial-value nil)
-    (reduce f (map #(:value %) (filter not-nil? elements)))
+    (reduce f (map #(:value %) (filter not-nil? hash-table)))
     (reduce f (first initial-value) (map #(:value %)
-                                         (filter not-nil? elements)))))
+                                         (filter not-nil? hash-table)))))
 
-(defn fold-right [elements f & initial-value]
+(defn fold-right [hash-table f & initial-value]
   (if (= initial-value nil)
-    (reduce f (map #(:value %) (reverse (filter not-nil? elements))))
+    (reduce f (map #(:value %) (reverse (filter not-nil? hash-table))))
     (reduce f (first initial-value)
-            (map #(:value %) (reverse (filter not-nil? elements))))))
+            (map #(:value %) (reverse (filter not-nil? hash-table))))))
 
-(defn filter-hash-table [elements pred]
+(defn filter-hash-table [hash-table pred]
   (vec (map #(if (nil? %) nil
-                          (if (pred (:value %)) % nil)) elements)))
+                          (if (pred (:value %)) % nil)) hash-table)))
 
 (defn merge-hash-tables [hash-table-1 hash-table-2]
   (if (= hash-table-1 hash-table-2)
@@ -98,7 +98,8 @@
                 (if (= 0 (count left-hash-table-2-elements))
                   output-merged-hash-table
                   (recur (rest left-hash-table-2-elements)
-                         (put output-merged-hash-table (:key (first left-hash-table-2-elements)) (:value (first left-hash-table-2-elements)))))))
+                         (put output-merged-hash-table (:key (first left-hash-table-2-elements))
+                              (:value (first left-hash-table-2-elements)))))))
             (if (nil? (nth hash-table-1 iter))
               (recur (inc iter) filtered-hash-table-2 merged-hash-table)
               (do

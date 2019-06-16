@@ -6,4 +6,4 @@
   :dependencies [[org.clojure/clojure "1.10.0"]
                  [org.clojure/data.csv "0.1.4"]
                  [org.clojure/test.check "0.9.0"]]
-  :repl-options {:init-ns lab1.core})
+  :repl-options {:init-ns lab1.core} )
