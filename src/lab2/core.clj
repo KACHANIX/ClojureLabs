@@ -128,7 +128,8 @@
                                           (get-by-key hash-table-2 (:key (nth hash-table-1 iter))))))))))))))))
 
 
-;(def a (vec (repeat 5 nil)))
+(def a (vec (repeat 5 nil)))
+(println (put (put a 5 2) 5 1))
 ;(println (filter-hash-table (put (put a (struct hash-map-element "asd" 123))
 ;                          (struct hash-map-element "dsa" 124)) even?))
 
