@@ -7,9 +7,8 @@
     <list default="true" id="6fccd8d5-5156-482f-bb87-1d2c975c1882" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lab4/core.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab4/core.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/playground/pg.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/playground/pg.clj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/lab1/lab1/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/maven/lab1/lab1/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/repl-port" beforeDir="false" afterPath="$PROJECT_DIR$/target/repl-port" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stale/leiningen.core.classpath.extract-native-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/target/stale/leiningen.core.classpath.extract-native-dependencies" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,8 +22,30 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/lab4/core.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="47" column="31" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
+            <state relative-caret-position="494">
+              <caret line="103" column="28" selection-start-line="103" selection-start-column="28" selection-end-line="103" selection-end-column="28" />
+              <folding>
+                <element signature="e#2207#2554#0" />
+                <element signature="e#2556#3515#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/playground/pg.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lab2/core.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="524">
+              <caret line="58" column="10" lean-forward="true" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -66,9 +87,10 @@
       <find>res</find>
       <find>resolver</find>
       <find>recur</find>
-      <find>println</find>
       <find>elements</find>
       <find>(fn [x] (+ 2 (* x 1)))</find>
+      <find>@~</find>
+      <find>println</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -90,8 +112,6 @@
         <option value="$PROJECT_DIR$/src/lab1/first.clj" />
         <option value="$PROJECT_DIR$/src/lab2/lab2.clj" />
         <option value="$PROJECT_DIR$/src/lab1/second.clj" />
-        <option value="$PROJECT_DIR$/src/playground/pg.clj" />
-        <option value="$PROJECT_DIR$/src/lab2/core.clj" />
         <option value="$PROJECT_DIR$/src/lab2/tests.clj" />
         <option value="$PROJECT_DIR$/src/lab3/io.clj" />
         <option value="$PROJECT_DIR$/src/lab3/lagrange_interpolation.clj" />
@@ -99,6 +119,8 @@
         <option value="$PROJECT_DIR$/src/lab3/linear_segments_interpolation.clj" />
         <option value="$PROJECT_DIR$/src/lab3/tests.clj" />
         <option value="$PROJECT_DIR$/project.clj" />
+        <option value="$PROJECT_DIR$/src/lab2/core.clj" />
+        <option value="$PROJECT_DIR$/src/playground/pg.clj" />
         <option value="$PROJECT_DIR$/src/lab4/core.clj" />
       </list>
     </option>
@@ -109,9 +131,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="953" />
-    <option name="width" value="974" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="883" />
+    <option name="width" value="1044" />
     <option name="height" value="1087" />
   </component>
   <component name="ProjectView">
@@ -120,7 +142,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -182,12 +203,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560800192561" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561419246816" />
     <property name="cursive.last.file.extension.C\:/Users/SKOCH/Desktop/ClojureLabs/src" value="clj" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../свалка/ОПИ/lab4" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -273,7 +295,7 @@
       <setting name="profiles" value="" />
       <setting name="aliases" value="" />
       <setting name="vmparams" value="" />
-      <setting name="params" value="-1 1 0.25 segments" />
+      <setting name="params" value="-1 1 0.25 lagrange 5" />
       <setting name="workDir" value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
@@ -301,6 +323,18 @@
       <setting name="workDir" value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
+    <configuration name="pg" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
+      <module name="lab1" />
+      <setting name="path" value="$PROJECT_DIR$/src/playground/pg.clj" />
+      <setting name="namespace" value="" />
+      <setting name="execution" value="INTELLIJ" />
+      <setting name="profiles" value="" />
+      <setting name="aliases" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="$PROJECT_DIR$/src/playground" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Clojure Application.4-core" />
       <item itemvalue="Clojure Application.3-core" />
@@ -308,13 +342,15 @@
       <item itemvalue="Clojure Application.2-core" />
       <item itemvalue="Clojure Application.2-tests" />
       <item itemvalue="Clojure REPL.Unnamed" />
+      <item itemvalue="Clojure Application.pg" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Clojure Application.3-tests" />
-        <item itemvalue="Clojure Application.3-core" />
-        <item itemvalue="Clojure Application.2-tests" />
+        <item itemvalue="Clojure Application.pg" />
         <item itemvalue="Clojure Application.2-core" />
+        <item itemvalue="Clojure Application.3-core" />
+        <item itemvalue="Clojure Application.3-tests" />
+        <item itemvalue="Clojure Application.2-tests" />
       </list>
     </recent_temporary>
   </component>
@@ -365,6 +401,8 @@
       <workItem from="1560869327418" duration="3700000" />
       <workItem from="1560873536370" duration="3186000" />
       <workItem from="1560886414604" duration="1153000" />
+      <workItem from="1560948967359" duration="15900000" />
+      <workItem from="1561397310319" duration="17519000" />
     </task>
     <task id="LOCAL-00001" summary="linear approx ready, changing it to use closure">
       <created>1556993846927</created>
@@ -464,11 +502,18 @@
       <option name="project" value="LOCAL" />
       <updated>1560800170488</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="labs seem to be ready">
+      <created>1560970621387</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1560970621387</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="172452000" />
+    <option name="totallyTimeSpent" value="205871000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -480,10 +525,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="883" y="0" width="1044" height="1087" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.057036247" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1453252" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -492,7 +537,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49949747" weight="0.31761006" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49949747" visible="true" weight="0.3197065" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997923" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -533,27 +578,13 @@
     <MESSAGE value="lab2: code remade again, tests now are made with test.check" />
     <MESSAGE value="lab3: tests ready (a bit NAKOSTYLENO)" />
     <MESSAGE value="lab4: must make continue" />
-    <option name="LAST_COMMIT_MESSAGE" value="lab4: must make continue" />
+    <MESSAGE value="labs seem to be ready" />
+    <option name="LAST_COMMIT_MESSAGE" value="labs seem to be ready" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/lab2/lab2.clj" />
-    <entry file="file://$PROJECT_DIR$/src/playground/pg.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.nrepl-port">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LICENSE">
       <provider selected="true" editor-type-id="text-editor" />
@@ -582,27 +613,6 @@
     <entry file="file://$PROJECT_DIR$/lab1.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lab3/tests.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="54" selection-start-line="32" selection-start-column="54" selection-end-line="32" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lab2/tests.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lab3/io.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/lab1/first.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
@@ -614,27 +624,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lab2/core.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="98" column="42" selection-start-line="76" selection-end-line="115" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lab3/linear_segments_interpolation.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lab3/lagrange_interpolation.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="822">
-          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -651,13 +640,6 @@
     <entry file="jar://$MAVEN_REPOSITORY$/riddley/riddley/0.2.0/riddley-0.2.0.jar!/walk.clj">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lab3/core.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/lab1/second.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -665,10 +647,80 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab3/tests.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="25" column="48" lean-forward="true" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab3/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab2/tests.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="791">
+          <caret line="84" column="17" selection-start-line="84" selection-start-column="17" selection-end-line="84" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret selection-end-column="1" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab3/lagrange_interpolation.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="49" column="71" lean-forward="true" selection-start-line="2" selection-end-line="49" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab3/linear_segments_interpolation.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="28" column="81" lean-forward="true" selection-start-line="28" selection-start-column="81" selection-end-line="28" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab3/io.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab2/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="58" column="10" lean-forward="true" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/playground/pg.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/lab4/core.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="47" column="31" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
+        <state relative-caret-position="494">
+          <caret line="103" column="28" selection-start-line="103" selection-start-column="28" selection-end-line="103" selection-end-column="28" />
+          <folding>
+            <element signature="e#2207#2554#0" />
+            <element signature="e#2556#3515#0" />
+          </folding>
         </state>
       </provider>
     </entry>
