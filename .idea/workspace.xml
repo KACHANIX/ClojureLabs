@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/lab4/core.clj" line="4" />
+    <bookmark url="file://$PROJECT_DIR$/src/lab4/core.clj" line="3" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6fccd8d5-5156-482f-bb87-1d2c975c1882" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lab4/core.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab4/core.clj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/playground/pg.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/playground/pg.clj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/lab1/lab1/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/maven/lab1/lab1/pom.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,12 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/lab4/core.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="103" column="28" selection-start-line="103" selection-start-column="28" selection-end-line="103" selection-end-column="28" />
-              <folding>
-                <element signature="e#2207#2554#0" />
-                <element signature="e#2556#3515#0" />
-              </folding>
+            <state relative-caret-position="795">
+              <caret line="178" column="42" lean-forward="true" selection-start-line="178" selection-start-column="42" selection-end-line="178" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -35,17 +29,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/playground/pg.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lab2/core.clj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="524">
-              <caret line="58" column="10" lean-forward="true" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="10" />
+            <state relative-caret-position="379">
+              <caret line="29" column="68" selection-start-line="29" selection-start-column="68" selection-end-line="29" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -61,10 +46,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>flow-iterator</find>
-      <find>prev-point</find>
-      <find>min-points</find>
-      <find>basic-pol-coll</find>
       <find>basic-poly</find>
       <find>x-to-eliminate</find>
       <find>x-values-nodes</find>
@@ -90,7 +71,11 @@
       <find>elements</find>
       <find>(fn [x] (+ 2 (* x 1)))</find>
       <find>@~</find>
+      <find>(nth ~user-bindings 2)</find>
+      <find>resolve</find>
       <find>println</find>
+      <find>0</find>
+      <find>all-counters</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -131,9 +116,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="883" />
-    <option name="width" value="1044" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
     <option name="height" value="1087" />
   </component>
   <component name="ProjectView">
@@ -141,7 +126,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -203,13 +187,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561419246816" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561479206615" />
     <property name="cursive.last.file.extension.C\:/Users/SKOCH/Desktop/ClojureLabs/src" value="clj" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../свалка/ОПИ/lab4" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -341,8 +326,8 @@
       <item itemvalue="Clojure Application.3-tests" />
       <item itemvalue="Clojure Application.2-core" />
       <item itemvalue="Clojure Application.2-tests" />
-      <item itemvalue="Clojure REPL.Unnamed" />
       <item itemvalue="Clojure Application.pg" />
+      <item itemvalue="Clojure REPL.Unnamed" />
     </list>
     <recent_temporary>
       <list>
@@ -403,6 +388,7 @@
       <workItem from="1560886414604" duration="1153000" />
       <workItem from="1560948967359" duration="15900000" />
       <workItem from="1561397310319" duration="17519000" />
+      <workItem from="1561461986913" duration="16247000" />
     </task>
     <task id="LOCAL-00001" summary="linear approx ready, changing it to use closure">
       <created>1556993846927</created>
@@ -513,7 +499,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="205871000" />
+    <option name="totallyTimeSpent" value="222118000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -525,10 +511,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="883" y="0" width="1044" height="1087" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1453252" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.08955224" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -537,8 +522,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49949747" visible="true" weight="0.3197065" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997923" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49949747" weight="0.42575285" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39937106" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32606438" />
@@ -701,26 +686,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab2/core.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="58" column="10" lean-forward="true" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="10" />
+        <state relative-caret-position="197">
+          <caret line="110" column="37" selection-start-line="110" selection-start-column="30" selection-end-line="110" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/playground/pg.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        <state relative-caret-position="379">
+          <caret line="29" column="68" selection-start-line="29" selection-start-column="68" selection-end-line="29" selection-end-column="68" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab4/core.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="103" column="28" selection-start-line="103" selection-start-column="28" selection-end-line="103" selection-end-column="28" />
-          <folding>
-            <element signature="e#2207#2554#0" />
-            <element signature="e#2556#3515#0" />
-          </folding>
+        <state relative-caret-position="795">
+          <caret line="178" column="42" lean-forward="true" selection-start-line="178" selection-start-column="42" selection-end-line="178" selection-end-column="42" />
         </state>
       </provider>
     </entry>
