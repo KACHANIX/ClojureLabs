@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6fccd8d5-5156-482f-bb87-1d2c975c1882" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,8 +29,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="510">
-                <caret line="30" column="15" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="15" />
+              <first_editor relative-caret-position="848">
+                <caret line="52" column="66" selection-start-line="52" selection-start-column="66" selection-end-line="52" selection-end-column="66" />
               </first_editor>
               <second_editor />
             </state>
@@ -403,7 +402,7 @@
       <workItem from="1561397310319" duration="17519000" />
       <workItem from="1561461986913" duration="16247000" />
       <workItem from="1561545784992" duration="339000" />
-      <workItem from="1561653230733" duration="805000" />
+      <workItem from="1561653230733" duration="1062000" />
     </task>
     <task id="LOCAL-00001" summary="linear approx ready, changing it to use closure">
       <created>1556993846927</created>
@@ -517,11 +516,18 @@
       <option name="project" value="LOCAL" />
       <updated>1561545873866</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="readme added">
+      <created>1561654245357</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1561654245357</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="223262000" />
+    <option name="totallyTimeSpent" value="223519000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -588,7 +594,8 @@
     <MESSAGE value="lab4: must make continue" />
     <MESSAGE value="labs seem to be ready" />
     <MESSAGE value="26.04 last try" />
-    <option name="LAST_COMMIT_MESSAGE" value="26.04 last try" />
+    <MESSAGE value="readme added" />
+    <option name="LAST_COMMIT_MESSAGE" value="readme added" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/lab2/lab2.clj" />
@@ -722,8 +729,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="510">
-            <caret line="30" column="15" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="15" />
+          <first_editor relative-caret-position="848">
+            <caret line="52" column="66" selection-start-line="52" selection-start-column="66" selection-end-line="52" selection-end-column="66" />
           </first_editor>
           <second_editor />
         </state>
